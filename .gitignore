@@ -1,0 +1,6 @@
+# Project exclude paths
+/auth-center/target/
+/cmdb-demo/target/
+/gateway-center/target/
+/order-center/target/
+/product-center/target/

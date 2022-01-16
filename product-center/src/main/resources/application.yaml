@@ -1,0 +1,13 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: product-center
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 784ade72-a3f0-4802-8c44-287376030069
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 784ade72-a3f0-4802-8c44-287376030069

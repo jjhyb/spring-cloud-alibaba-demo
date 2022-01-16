@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="product-center" />
+        <module name="user-center" />
+        <module name="auth-center" />
+        <module name="gateway-center" />
+        <module name="spring-cloud-alibaba-demo" />
+        <module name="order-center" />
+        <module name="ad-center" />
+        <module name="cmdb-demo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ad-center" options="-parameters" />
+      <module name="auth-center" options="-parameters" />
+      <module name="gateway-center" options="-parameters" />
+      <module name="order-center" options="-parameters" />
+      <module name="product-center" options="-parameters" />
+      <module name="user-center" options="-parameters" />
+    </option>
+  </component>
+</project>

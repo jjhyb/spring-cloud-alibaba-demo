@@ -1,0 +1,23 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: auth-center
+  datasource:
+    url: jdbc:mysql://localhost:3306/xc_user?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    hikari:
+      username: root
+      password: yibo
+      # mysql 6.x以上 com.mysql.cj.jdbc.Driver
+      # mysql 5.x com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
+security:
+  oauth2:
+    client:
+      #这里的数据和数据库表中记录对应
+      client-id: user-center
+      client-secret: 123456
+    resource:
+      jwt:
+        #这条配置的源码在TokenKeyEndpoint类中，资源服务器通过此路径从认证服务器是哪个获取公钥用于解密Token
+        key-uri: http://auth.yibo.com:9090/oauth/token_key
